@@ -112,10 +112,10 @@ if(message.content.toLowerCase().startsWith(prefix + `new`)) {
      .setDescription(":x: هناك شخص قد سبقك في عمل التيكت انتظر دورك \`\`1\\")  
      .setColor("22BF41");
         if (message.guild.channels.exists("name", "ticket-" + ticketnumber)) return message.channel.send(already);
-    if (message.guild.channels.exists("name", "ticket-")) return message.channel.send(already);
-    if (message.guild.channels.exists("name", "ticket")) return message.channel.send(already);
-    if (message.channel.name.startsWith("ticket-")) return message.channel.send(already);
-    if (message.channel.name.startsWith("ticket-" + ticketnumber)) return message.channel.send(already);
+    if (message.guild.channels.exists("name", "ticket-" + ticketnumber)) return message.channel.send(already);
+    if (message.guild.channels.exists("name", "ticket-" + ticketnumber)) return message.channel.send(already);
+    if (message.guild.channels.exists("name", "ticket-" + ticketnumber)) return message.channel.send(already);
+    if (message.guild.channels.exists("name", "ticket-" + ticketnumber)) return message.channel.send(already);
         message.guild.createChannel(`ticket-${ticketnumber}`, "text").then(ticketx => {
         ticketx.setParent(thiscategory);
             let role = message.guild.roles.find("name", srole);
