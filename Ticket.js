@@ -157,7 +157,7 @@ if(message.content.toLowerCase().startsWith(prefix + `new`)) {
      .setColor("22BF41");          
         if (!thisrole) return message.channel.send(rerole);
               const already = new Discord.RichEmbed()
-     .setDescription(":x: هناك شخص قد سبقك في عمل التيكت انتظر دورك\`\`")  
+     .setDescription(":x: انت اصلا مسوي فعلا تيكت\`\`")  
      .setColor("22BF41");
         if (message.guild.channels.exists("name", "ticket-" + ticketnumber)) return message.channel.send(already);
     if (message.guild.channels.exists("name", "ticket-")) return message.channel.send(already);
